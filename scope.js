@@ -3,9 +3,15 @@ var isCookieJarOpen = null;
 
 function closeLid() {
   /* answer here */
+  if (isCookieJarOpen = false) {
+    return false
+  }
 }
 
 function openLid() {
+  if (isCookieJarOpen = true){
+    return true
+  }
   /* answer here */
 }
 
@@ -17,10 +23,12 @@ function outerFunction() {
 
   function innerFunction() {
     var world = 'World';
-    return /* answer here */;
+    hello = 'Hello World'
+    return hello;
   }
   return innerFunction();
 }
+
 
 
 // This is a function that takes in a 2d-array (or matrix) and returns the sum of all elements
@@ -31,8 +39,8 @@ function addMatrixElements(matrix) {
 
   for(var i = 0; i < matrix.length; i++) {
     /* fix counter variables in the second loop */
-    for(var i = 0; i < matrix[i].length; i++) {
-      result = result + matrix[i][i];
+    for(var j = 0; j < matrix[i].length; j++) {
+      result = result + matrix[i][j];
     }
   }
   return result;
@@ -45,7 +53,7 @@ function sendDataToClient() {
 
   var userObject = {
     handle: 'neo',
-    authenticated: false
+    authenticated: true
   }
 
   function authenticateUser(obj, username) {
